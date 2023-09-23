@@ -1,0 +1,23 @@
+
+2. Define a URL pattern in your `urls.py` file to map the download view function to a specific URL:
+
+```python
+from django.urls import path
+from .views import download_file
+
+urlpatterns = [
+    path('download/', download_file, name='download'),
+]
+```
+
+3. In your HTML template, add a download button and link it to the download URL using Django's `url` template tag:
+
+```html
+<a href="{% url 'download' %}" class="btn btn-primary">Download</a>
+```
+
+This will generate a link to the download view, and the `url` template tag will automatically resolve the URL based on the provided name `'download'` in the URL pattern.
+
+4. Ensure that you have a properly configured media storage setup to serve the files from the media folder. Refer to the Django documentation on handling media files for more information.
+
+When the user clicks the Download button, it will trigger the URL mapped to the `download_file` view. This view returns a `FileResponse` with the appropriate file path and the `as_attachment=True` parameter, which forces the browser to download the file instead of displaying it directly.
