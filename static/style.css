@@ -75,11 +75,23 @@ header nav {
 header nav .branding{
     margin-right:3rem;
 }
+#navbar{
+    width: 100% !important;
+    background-color: #16161631 !important;
+    padding: 1% 10%;
+    backdrop-filter: blur(10px);
+}
+.nav-item a{
+    color: white;
+}
+.nav-item a:hover{
+    color: var(--primary);
+}
 .hero{
-    padding:3rem 0;
+    padding:10% 0 2% 0;
 }
 .hero .left img{
-    width:400px;
+    width:70%;
 }
 .hero .right{
     color:var(--pure);
@@ -112,6 +124,7 @@ section{
 section.about .about-me-img{
     height:450px;
 }
+
 section.about h1{
     margin-bottom: 1rem;
     font-size:1.6rem;
@@ -543,11 +556,32 @@ footer .copyright{
 }
 
 @media (max-width:1024px){
-    header #main-nav{
-        display:none;
+    
+    .hero{
+        padding:10% 0;
     }
-    .hamberger{
-        display: block;
+    .hero .right{
+        width: 100%;
+        position: absolute;
+        top:260px;
+        left: 0;
+        padding:0 3rem 4rem 8rem;
+        background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .hero .right h1{
+        font-size: 2.5rem;
+
+    }
+    .hero .right h6{
+        font-size: 1.3rem;
+    }
+    .hero .right a{
+        font-size: 0.7rem;
+        margin-bottom: 8rem;
+    }
+    .hero .left{
+        margin-top:4rem;
+        padding-bottom:2rem;
     }
     .hero .left img{
         width:260px;
@@ -555,14 +589,8 @@ footer .copyright{
     .hero .right h1{
         font-size: 3rem;
     }
-    .hero{
-        padding-top:10rem;
-    }
-    header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
-    }
     section.about .about-me-img{
-        height: 360px;
+        height: 300px;
     }
     section.services .card-wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -581,6 +609,7 @@ footer .copyright{
 @media (max-width:576px){
     .hero{
         flex-direction: column;
+        padding:10% 0;
     }
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
@@ -591,8 +620,19 @@ footer .copyright{
         padding:0 1rem;
         background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
     }
+    .hero .right h1{
+        font-size: 2.5rem;
+
+    }
+    .hero .right h6{
+        font-size: 1.3rem;
+    }
+    .hero .right a{
+        font-size: 0.7rem;
+        margin-bottom: 8rem;
+    }
     .hero .left{
-        margin-top:-5rem;
+        margin-top:2rem;
         margin-right: -9rem;
         padding-bottom:4rem;
     }
