@@ -74,6 +74,15 @@ header nav {
 }
 header nav .branding{
     margin-right:3rem;
+    display: flex;
+}
+header nav .branding h1{
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 0.6rem;
+}
+header nav .branding img{
+    height: 4rem;
 }
 #navbar{
     width: 100% !important;
@@ -555,6 +564,16 @@ footer .copyright{
     font-size: 2rem;
 }
 
+.logolast img{
+    height: 4rem;
+    width: 4rem;
+    padding-bottom: -5rem;
+}
+.logolast h1{
+    font-size: 2rem;
+    color: white;
+
+}
 @media (max-width:1024px){
     
     .hero{
@@ -607,6 +626,13 @@ footer .copyright{
 }
 
 @media (max-width:576px){
+    header nav .branding h1{
+        font-size: 1.5rem;
+        padding-top: 0.8rem;
+    }
+    header nav .branding img{
+        height: 3rem;
+    }
     .hero{
         flex-direction: column;
         padding:10% 0;
