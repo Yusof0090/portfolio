@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#work">MY PROJECTS</a>
                           </li>
                         </ul>
-                        <form class="d-flex" role="search">
+                        <form class="d-flex" id="contactbtn" role="search">
                             <a class="btn btn-warning" href="#contact">Contact</a>
                         </form>
                       </div>
@@ -51,11 +51,11 @@
                     <div class="left flex-1 flex justify-center">
                         <img src="static/images/man.png" alt="" style="user-select: none;">
                     </div>
-                    <div class="right flex-1">
+                    <div class="right flex-1" id="warning">
                         <h6>Yusof Shokohyan</h6>
                         <h1>I’m a Creative <br> <span>Web Developer</span> and <br><span>Graphic Designer</span></h1>
                         <div>
-                            <a class="btn btn-secondary" href="{% url 'download' %}">DOWNLOAD CV</a>
+                            <a class="btn btn-secondary"  href="{% url 'download' %}">DOWNLOAD CV</a>
                         </div>
                     </div>
                 </div>

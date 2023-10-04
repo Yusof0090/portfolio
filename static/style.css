@@ -201,6 +201,7 @@ section.about .social a{
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    text-decoration: none;
 }
 section.about .social a:hover{
     background:var(--primary123);
@@ -472,6 +473,11 @@ footer .footer-socials a{
     color: white;
     font-size: 3rem;
 }
+footer .footer-socials a:hover{
+    margin-right:1rem;
+    color: var(--primary123);
+    font-size: 3rem;
+}
 footer .footer-socials{
     margin-bottom:3rem;
     margin-right:-1rem;
@@ -558,6 +564,16 @@ footer .copyright{
     font-size: 2rem;
     color: white;
 
+}
+#warning a{
+ color: #ffffff;
+}
+#warning a:hover{
+ color: var(--primary123);
+}
+#contactbtn a:hover{
+    color: black;
+    background-color: white;
 }
 @media (max-width:1024px){
     
